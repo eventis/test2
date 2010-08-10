@@ -28,8 +28,8 @@ package javax.enterprise.inject.spi;
  * </p>
  * 
  * @author David Allen
- * @param <T> The class of the producer field
- * @param <X> The class of the bean representing the producer field
+ * @param <T> The class of the bean declaring the producer field
+ * @param <X> The type of the producer field
  */
 public interface ProcessProducerField<T, X> extends ProcessBean<X>
 {

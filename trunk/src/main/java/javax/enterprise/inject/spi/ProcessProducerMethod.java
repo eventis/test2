@@ -27,8 +27,8 @@ package javax.enterprise.inject.spi;
  * </p>
  * 
  * @author David Allen
- * @param <T> The class of the return type of the producer method
- * @param <X> The class of the bean representing the producer method
+ * @param <T> The class of the bean declaring the producer method
+ * @param <X> The return type of the producer method
  */
 public interface ProcessProducerMethod<T, X> extends ProcessBean<X>
 {
