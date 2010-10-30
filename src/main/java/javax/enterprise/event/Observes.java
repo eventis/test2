@@ -84,7 +84,7 @@ public @interface Observes
     * the bean that defines the observer method already exists in the current 
     * context.</p>
     */
-	public Reception receive() default Reception.ALWAYS;
+	public Reception notifyObserver() default Reception.ALWAYS;
 	
 	/**
 	 * <p>Specifies 
