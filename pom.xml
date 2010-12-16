@@ -5,6 +5,7 @@
       <groupId>org.jboss.weld</groupId>
       <artifactId>weld-parent</artifactId>
       <version>17</version>
+      <relativePath />
    </parent>
 
    <groupId>javax.enterprise</groupId>
