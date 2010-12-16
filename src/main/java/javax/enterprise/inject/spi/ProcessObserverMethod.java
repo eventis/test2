@@ -32,9 +32,12 @@ package javax.enterprise.inject.spi;
  * @see ObserverMethod
  * @author Gavin King
  * @author David Allen
- * @param <X> The type of the event being observed
- * @param <T> The bean type containing the observer method
+ * @param <T> The type of the event being observed
+ * @param <X> The bean type containing the observer method
+ * 
  */
+//These parameters are the wrong way according to the spec, however Oracle/JCP compatibility rules require us to 
+//keep the wrong ordering
 public interface ProcessObserverMethod<T, X>
 {
    /**
