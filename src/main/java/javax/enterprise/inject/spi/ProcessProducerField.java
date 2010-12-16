@@ -28,9 +28,12 @@ package javax.enterprise.inject.spi;
  * </p>
  * 
  * @author David Allen
- * @param <T> The class of the bean declaring the producer field
- * @param <X> The type of the producer field
+ * @param <T> The type of the producer field
+ * @param <X> The class of the bean declaring the producer field
+ * 
  */
+// These parameters are the wrong way according to the spec, however Oracle/JCP compatibility rules require us to 
+// keep the wrong ordering
 public interface ProcessProducerField<T, X> extends ProcessBean<X>
 {
    /**

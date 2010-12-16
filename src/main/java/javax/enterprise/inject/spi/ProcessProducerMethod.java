@@ -27,9 +27,11 @@ package javax.enterprise.inject.spi;
  * </p>
  * 
  * @author David Allen
- * @param <T> The class of the bean declaring the producer method
- * @param <X> The return type of the producer method
+ * @param <T> The return type of the producer method
+ * @param <X> The class of the bean declaring the producer method
  */
+//These parameters are the wrong way according to the spec, however Oracle/JCP compatibility rules require us to 
+//keep the wrong ordering
 public interface ProcessProducerMethod<T, X> extends ProcessBean<X>
 {
    /**
